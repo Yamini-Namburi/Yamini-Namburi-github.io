@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Avi's date lib practice</title>
+</head>
+<body>
+	<h1 align="center">Hello</h1>
+	<button align="center" onclick="display_date_time()">Click here</button>
+</body>
+<script type="text/javascript">
+	function display_date_time() {
+		var currentTime = new Date();
+		var timeFormat = new Date().toLocaleString();
+		var res = timeFormat.split(",");
+		var offset = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+		document.body.innerHTML = "<h1 align=\"center\">Today's date is " + get_todays_date() + "</h1><br><h1 align=\"center\">Today's day is " + day_to_string() + "</h1><br><h1 align=\"center\">Today's time is " + res[1]+" "+offset+"</h1>"
+	}
+	/**
+
+	*/
+	function day_to_string(){
+		switch (new Date().getDay()) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 6:
+        day = "Saturday";
+	}
+	return day;
+	}
+
+	function get_todays_date(){
+		var today = new Date();
+		var dd = today.getDate();
+		var mm = today.getMonth()+1; //January is 0!
+
+		var yyyy = today.getFullYear();
+		if(dd<10){
+   			 dd='0'+dd;
+		} 
+		if(mm<10){
+    		mm='0'+mm;
+		} 
+		var today = dd+'/'+mm+'/'+yyyy;
+		return today;
+	}
+
+	</script>
+
+</html>
