@@ -1,0 +1,19 @@
+.bounding-box {
+	
+bottom: 69.1719px;
+box-shadow: rgb(20, 157, 242) 0px 0px 0px 3px inset;
+box-sizing:border-box;
+cursor:pointer;
+display:flex;
+flex-wrap:wrap;
+font-family:sofia-pro;
+
+justify-content:center;
+left:86.7344px;
+position:absolute;
+right:49.2031px;
+text-size-adjust:100%;
+top:16.7656px;
+-webkit-font-smoothing: antialiased;
+
+}
