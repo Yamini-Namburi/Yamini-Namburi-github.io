@@ -28,21 +28,21 @@ body {
 }
 
 .main-banner #imgban3 {
-	background-image: url(Documents/GitHub/Yamini-Namburi-github.io/javascript/banner/img/imgban3.jpg');
+	background-image: url(imgban3.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
 .main-banner #imgban2 {
-	background-image: url('Documents/GitHub/Yamini-Namburi-github.io/javascript/banner/img/imgban2.jpg');
+	background-image: url(imgban2.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
 .main-banner #imgban1 {
-	background-image: url(Documents/GitHub/Yamini-Namburi-github.io/javascript/banner/img/imgban1.jpg');
+	background-image: url(imgban1.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
