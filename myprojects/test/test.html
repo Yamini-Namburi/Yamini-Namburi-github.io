@@ -3,28 +3,40 @@
   <meta charset="utf-8">
   <title>TEST</title>
 </head>
-<body>
+<body onload="init()">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
-<div onclick="myfun('Gold')">
-	Click here
+<div onclick="myfun('Gold')" id="test1">
+	TEXT1 CLICK HERE
 </div>
 
+<div id="test2">
+	TEXT2
+</div>
 
+<form name="frm1" id="someform">
+<input type="radio" name="color" id="color-color1" data-image="color1" class="buttons" value="color1" onclick="formSubmit()"/>
+<input type="radio" name="color" id="color-color2" data-image="color2" class="buttons" value="color2" onclick="formSubmit()"/>
+<input type="radio" name="color" id="color-color3" data-image="color3" class="buttons" value="color3" onclick="formSubmit()"/>
+
+<input type="radio" name="capacity" id="capacity-64" data-image="" class="buttons" value="64MB" onclick="formSubmit()"/>
+<input type="radio" name="capacity" id="capacity-256" data-image="" class="buttons" value="256MB" onclick="formSubmit()"/>
+</form>
 
 <script>
-	function myfun(colourName){
-		$.getJSON('https://s3.eu-west-2.amazonaws.com/avi-mylifecycle-bucketlondon/phones.json',function(data){
-		/*console.log(data[0].deviceSummary[0]);*/
-		var phones= data[0];	
-		for (var i = phones.deviceSummary.length - 1; i >= 0; i--) {
-			if(colourName === phones.deviceSummary[i].colourName){
-				var deviceInfo = phones.deviceSummary[i];
-				alert("The price of" + deviceInfo.displayName + " is: " + deviceInfo.priceInfo.bundlePrice.monthlyPrice.gross);
-			}
-		}
-	});
+	function formSubmit()
+	{
+		color = $('input[name=color]:checked', '#frm1').val();
+		capacity = $('input[name=capacity]:checked', '#frm1').val();
+		alert("Form Submitted with Color"+color+"And capacity:"+capacity);
+	}
+	function init(){
+    	colourSelection = document.getElementById("color-color1");
+    	colourSelection.checked = true;
+    	capacitySelection = document.getElementById("capacity-64");
+    	capacitySelection.checked = true;
+    	formSubmit();
 	}
 </script>
 </body>

@@ -42,12 +42,12 @@ html, body {
 
 
 /* Product Description */
-.product-description {
+.product-name {
  /* border-bottom: 1px solid #E1E8EE;
   margin-bottom: 20px; */
 }
 
-.product-description h1 {
+.product-name h1 {
   font-weight: 100;
   font-family: "Times New Roman", Times, serif;
   font-size: 52px;
@@ -99,7 +99,7 @@ h1 { font-size: 1.5em; margin: 10px; }
 .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
 .rating > input:checked ~ label:hover ~ label { color: #FFED85;  }  
 
-.product-description p {
+.product-name p {
   font-size: 16px;
   font-family: "Times New Roman", Times, serif;
  font-weight: 100;
