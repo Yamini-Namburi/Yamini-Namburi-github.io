@@ -7,7 +7,7 @@
     </title>
     <!-- CSS -->
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/fontawesome.css">
+   <!-- <link rel="stylesheet" href="css/fontawesome.css"> -->
      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/
      bootstrap.min.css" rel="stylesheet">
      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -55,60 +55,68 @@
 
      <!-- Product Configuration -->
      <section>
+      
     <div class="product-configuration">
+      
       <form name="swatches" id="swatch-selector">
       <!-- Product Color -->
-      <div class="product-attribute1">
+      <div class="product-attribute1" id="left">
+       <div class="color-choose" id="leftswatch">
         <span>Color:</span><mark class="" id="colour-name"></mark>
-
-        <div class="color-choose">
-
+        <ul>
+        <li>
       <label>
         <input data-image="Space Grey" type="radio" id="Space Grey" name="color" value="Space Grey" onclick="selectPhone()"">
         <span class="swatch" style="background-color:#232324; background-image:"></span>
-      </label>
-    
+      </label></li>
+      <li>
       <label>
         <input data-image="Gold" type="radio" id="Gold" name="color" value="Gold" onclick="selectPhone()">
         <span class="swatch" style="background-color:#f8e7dc; background-image:"></span> 
       </label>
-    
+      </li>
       <label>
         <input data-image="Silver" type="radio" id="Silver" name="color" value="Silver" onclick="selectPhone()">
         <span class="swatch" style="background-color:#e1e2e3; background-image:"></span> 
-      </label>
+      </label></li>
+    </ul>
+    </div>
     
-</div> 
+ 
 </div>
  
 
 
          <!-- Product Capacity -->
-         <div class="product-attribute2">
-        <span>Capacity:</span>
+         
+
+         <div class="product-attribute2" id="right">
  
-        <div class="capacity-choose">
-          
+        <div class="capacity-choose" id="rightmemory">
+          <span>Capacity: <b style="font-color:#e1e2e3">64GB</b></span><mark class="" id="capacity-display"></mark>
+          <ul>
+            <li>
           <label>
           <input type="radio" name="capacity" id="capacity-64" value="64" onclick="selectPhone()"/>
           <span class="capacity">64</span> 
-          </label>
-          
+          </label></li>
+          <li>
           <label>
           <input type="radio" name="capacity" id="capacity-256" value="256" onclick="selectPhone()"/>
           <span class="capacity">256</span> 
-        </label>
-      
+        </label></li>
+        </ul>
          <!-- <button>64</button>
           <button>256</button> -->
           
         </div>
+   
  
       </div>
 
     </form>
+  </div>
 
-    </div>
   </section>
 
     <!-- Product Pricing -->
@@ -123,4 +131,4 @@
 
 
  
-      </div>
+      

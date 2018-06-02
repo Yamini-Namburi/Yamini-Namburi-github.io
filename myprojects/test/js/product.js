@@ -19,6 +19,7 @@ function selectPhone(){
         forPrices[1].innerText= monthlyGrossPrice;
         $('h1#display-name').html(displayName);
         $('#colour-name').html(color)
+        $('#capacity-display').html("<b>"+phoneMemory+"GB</b>")
         document.getElementById("product-description").innerHTML = description;
         document.getElementById("image").setAttribute("src",imageName);
       }
@@ -28,6 +29,7 @@ function selectPhone(){
 
   function init(){
     $('#colour-name').html("Space Grey")
+    $('#capacity-display').html("<b>64GB</b>")
     colourSelection = document.getElementById("Space Grey");
     colourSelection.checked = true;
     capacitySelection = document.getElementById("capacity-64");
