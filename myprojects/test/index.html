@@ -54,57 +54,62 @@
 
 
      <!-- Product Configuration -->
+     <section>
     <div class="product-configuration">
       <form name="swatches" id="swatch-selector">
       <!-- Product Color -->
-      <div class="product-color">
+      <div class="product-attribute1">
         <span>Color:</span><mark class="" id="colour-name"></mark>
 
         <div class="color-choose">
-  <ul>
-    <li>
+
       <label>
         <input data-image="Space Grey" type="radio" id="Space Grey" name="color" value="Space Grey" onclick="selectPhone()"">
         <span class="swatch" style="background-color:#232324; background-image:"></span>
       </label>
-    </li>
-    <li>
+    
       <label>
         <input data-image="Gold" type="radio" id="Gold" name="color" value="Gold" onclick="selectPhone()">
         <span class="swatch" style="background-color:#f8e7dc; background-image:"></span> 
       </label>
-    </li>
-    <li>
+    
       <label>
         <input data-image="Silver" type="radio" id="Silver" name="color" value="Silver" onclick="selectPhone()">
         <span class="swatch" style="background-color:#e1e2e3; background-image:"></span> 
       </label>
-    </li>
-  </ul> 
+    
 </div> 
- 
 </div>
+ 
+
 
          <!-- Product Capacity -->
-      <div class="product-var">
+         <div class="product-attribute2">
         <span>Capacity:</span>
  
         <div class="capacity-choose">
+          
           <label>
           <input type="radio" name="capacity" id="capacity-64" value="64" onclick="selectPhone()"/>
+          <span class="capacity">64</span> 
           </label>
+          
           <label>
           <input type="radio" name="capacity" id="capacity-256" value="256" onclick="selectPhone()"/>
+          <span class="capacity">256</span> 
         </label>
-          <button>64</button>
-          <button>256</button>
+      
+         <!-- <button>64</button>
+          <button>256</button> -->
           
         </div>
  
       </div>
+
     </form>
 
     </div>
+  </section>
 
     <!-- Product Pricing -->
     <div class="product-price">
