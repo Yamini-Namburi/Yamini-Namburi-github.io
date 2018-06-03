@@ -2,6 +2,22 @@
 <head>
   <meta charset="utf-8">
   <title>TEST</title>
+  <style type="text/css">
+  	#wrap{
+  		width: 485px;
+  	}
+  	.left{
+  		width: 240px;
+  		height: 123px;
+  		float: left;
+  	}	
+  	.right{
+  		width: 240px;
+  		height: 123px;
+  		float: right;
+  	}
+
+  </style>
 </head>
 <body onload="init()">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -15,14 +31,23 @@
 	TEXT2
 </div>
 
+<div id="wrap">
 <form name="frm1" id="someform">
+
+<div class="left">
+
 <input type="radio" name="color" id="color-color1" data-image="color1" class="buttons" value="color1" onclick="formSubmit()"/>
 <input type="radio" name="color" id="color-color2" data-image="color2" class="buttons" value="color2" onclick="formSubmit()"/>
 <input type="radio" name="color" id="color-color3" data-image="color3" class="buttons" value="color3" onclick="formSubmit()"/>
+</div>
 
+<div class="right">
 <input type="radio" name="capacity" id="capacity-64" data-image="" class="buttons" value="64MB" onclick="formSubmit()"/>
 <input type="radio" name="capacity" id="capacity-256" data-image="" class="buttons" value="256MB" onclick="formSubmit()"/>
+</div>
 </form>
+
+</div>
 
 <script>
 	function formSubmit()

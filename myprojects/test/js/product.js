@@ -1,12 +1,13 @@
 function selectPhone(){
     $.getJSON('https://s3.eu-west-2.amazonaws.com/avi-mylifecycle-bucketlondon/phones.json',function(data){
-    /*console.log(data[0].deviceSummary[0]);*/
+    /console.log(data[0].deviceSummary[0]);/
     var phones= data[0];  
     color = $('input[name=color]:checked', '#swatch-selector').val();
     capacity = $('input[name=capacity]:checked', '#swatch-selector').val();
     for (var i = phones.deviceSummary.length - 1; i >= 0; i--) {
       phoneMemory = phones.deviceSummary[i].memory.replace('GB','')
       if(color === phones.deviceSummary[i].colourName && capacity === phoneMemory){
+        var starRating = phones.rating;
         var deviceInfo = phones.deviceSummary[i];
         var displayName = deviceInfo.displayName;
         var description = deviceInfo.displayDescription;
@@ -22,6 +23,7 @@ function selectPhone(){
         $('#capacity-display').html("<b>"+phoneMemory+"GB</b>")
         document.getElementById("product-description").innerHTML = description;
         document.getElementById("image").setAttribute("src",imageName);
+        setStarRating(starRating);
       }
     }
   });
@@ -35,4 +37,22 @@ function selectPhone(){
     capacitySelection = document.getElementById("capacity-64");
     capacitySelection.checked = true;
     selectPhone();
+  }
+
+  function setStarRating(starRating){
+    var starElementId;
+    switch(starRating){
+      case("5"): starElementId = "star5"; break;
+      case("4.2"): starElementId = "star4half"; break;
+      case("4.0"): starElementId = "star4"; break;
+      case("3.2"): starElementId = "star3half"; break;
+      case("3.0"): starElementId = "star3"; break;
+      case("2.5"): starElementId = "star2half"; break;
+      case("2.0"): starElementId = "star2"; break;
+      case("1.5"): starElementId = "star1half"; break;
+      case("1.0"): starElementId = "star1"; break;
+
+    }
+    var starRatingInputId = document.getElementById(starElementId);
+    starRatingInputId.checked = true;
   }
