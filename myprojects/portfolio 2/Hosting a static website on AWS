@@ -1,0 +1,9 @@
+Hosting a static website on AWS
+
+https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html
+
+1.	Create a aws free account. - Already created for you by me (namburi.yamini@gmail.com/AviYamini123)
+2.  Follow the walk through document to setup a static website on AWS S3 .
+3. 	Checkin into S3 bucket all the static webcontent and see if you are able to access the website and the links on a whole.
+4.  Check if you are able to access all the images.
+5.  Check for issues mainly around CORS

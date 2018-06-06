@@ -1,0 +1,14 @@
+https://www.dropbox.com/s/1tv9ign3bosjbvv/developer_task.zip?dl=0&file_subpath=/developer_task/data/phones.json
+
+https://s3.eu-west-2.amazonaws.com/avi-mylifecycle-bucketlondon/phones.json
+
+CORS settings - I had to tweak AMAZON s3 bucket properties and permissions to get that working.
+
+based on the colour chosen will be the input onClick of swatch - call a function and pass what you have to send the color info - hex ,name,etc 
+
+Iterate over the array to fetch the right device summary.
+
+
+
+
+- On Page load 

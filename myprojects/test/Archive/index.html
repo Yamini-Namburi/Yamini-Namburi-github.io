@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Page
+    </title>
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+   <!-- bootstrap css for star rating -->
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/
+     bootstrap.min.css" rel="stylesheet">
+     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     <!-- JS -->
+     <script src="js/product.js"></script>
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.3.1.js"></script> 
+  </head>
+  </head>
+  <body onload="init()">
+
+    <main class="container">
+ 
+  <!-- Left Column / Iphone Image -->
+  <div class="left-column">
+    <img data-image="Space Grey" id="image" class="active" src="img/Apple_iPhone_8_Space_Grey_WS2-full-product-front.png" alt="">
+  </div>
+
+  <!-- Right Column -->
+ <div class="right-column">
+
+   <!-- Product Description -->
+    <div class="product-name">
+      <h1 id="display-name">Apple iphone 8</h1>
+     <form>  
+    
+  <fieldset class="rating">
+    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.2 stars"></label>
+    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+</fieldset> </form>
+<div class="centeralign">
+<p id="product-description"> All-glass design advanced cameras,wireless charging and a smart A11 Bonic chip intelligence never looked better. </p> </div>
+
+</div>
+
+
+     <!-- Product Configuration -->
+     <section>
+      
+    <div class="product-configuration">
+      
+      <form name="swatches" id="swatch-selector">
+      <!-- Product Color -->
+      <div class="product-attribute1" id="left">
+       <div class="color-choose" id="leftswatch">
+        <span>Color:</span>
+        <span id="colour-name"></span>
+        <ul>
+        <li>
+      <label>
+        <input data-image="Space Grey" type="radio" id="Space Grey" name="color" value="Space Grey" onclick="selectPhone()"">
+        <span class="swatch" style="background-color:#232324; background-image:"></span>
+      </label></li>
+      <li>
+      <label>
+        <input data-image="Gold" type="radio" id="Gold" name="color" value="Gold" onclick="selectPhone()">
+        <span class="swatch" style="background-color:#f8e7dc; background-image:"></span> 
+      </label>
+      </li>
+      <li>
+      <label>
+        <input data-image="Silver" type="radio" id="Silver" name="color" value="Silver" onclick="selectPhone()">
+        <span class="swatch" style="background-color:#e1e2e3; background-image:"></span> 
+      </label></li>
+    </ul>
+    </div>
+    
+ 
+</div>
+ 
+
+
+         <!-- Product Capacity -->
+         
+
+         <div class="product-attribute2" id="right">
+ 
+        <div class="capacity-choose" id="rightmemory">
+          <span>Capacity:</span>
+          <span id="capacity-display"></span>
+          <ul>
+            <li>
+          <label>
+          <input type="radio" name="capacity" id="capacity-64" value="64" onclick="selectPhone()"/>
+          <span class="capacity">64</span> 
+          </label></li>
+          <li>
+          <label>
+          <input type="radio" name="capacity" id="capacity-256" value="256" onclick="selectPhone()"/>
+          <span class="capacity">256</span> 
+        </label></li>
+        </ul>
+        </div>
+   
+ 
+      </div>
+
+    </form>
+  </div>
+
+  </section>
+
+    <!-- Product Pricing -->
+    <div class="product-price">
+      <span>from<strong> <mark class="red">£1148</mark></strong> upfront cost</span>
+      <span class="price">when you pay<strong> <mark class="red">£43.20</strong></mark> a month
+     
+    </div>
+  </div>
+</main>
+ 
+
+
+ 
+      
