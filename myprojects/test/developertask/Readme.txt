@@ -1,4 +1,4 @@
-Index.html is used to run the component
+"....Index.html is used to run the component ...." - is the landing page
 Invoked on the form submit which Parses phones.json to 
     retrieve the data which needs to be changed on the phone
     selection based on color and the capacity of the phone:-
