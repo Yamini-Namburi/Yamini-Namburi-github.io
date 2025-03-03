@@ -50,7 +50,7 @@ function bannerLoop() {
 		document.getElementById("imgban3").style.ZIndex = "500";
 	},500 );
 		setTimeout(function(){
-					document.getElementById("imgban2").style.opacity = "1";
+	        document.getElementById("imgban2").style.opacity = "1";
 
 		}, 1000);
 		bannersStatus = 2
